@@ -1,0 +1,46 @@
+name: Build SFMOMA feeds
+
+on:
+  schedule:
+    # 14:17, 20:17 and 02:17 UTC: roughly 7am, 1pm and 7pm Pacific
+    - cron: "17 2,14,20 * * *"
+  workflow_dispatch: {}   # adds a "Run workflow" button in the Actions tab
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sfmoma-feed
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Build feeds
+        run: python sfmoma_feed.py
+
+      # Runs even if the script flagged a problem, so partial results are kept
+      - name: Commit changes
+        if: ${{ !cancelled() }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs state.json
+          if git diff --cached --quiet; then
+            echo "No changes"
+            exit 0
+          fi
+          git commit -m "Update SFMOMA feeds"
+          git push
