@@ -33,7 +33,7 @@ from urllib3.util.retry import Retry
 # --------------------------------------------------------------------------
 # Configuration: edit these
 # --------------------------------------------------------------------------
-FEED_BASE_URL = "https://YOUR-USERNAME.github.io/sfmoma-feed"  # GitHub Pages URL
+FEED_BASE_URL = "https://geoweb999.github.io/sfmoma-feed"  # GitHub Pages URL
 USER_AGENT = "sfmoma-feed/1.0 (personal RSS reader; contact: you@example.com)"
 
 MAX_ITEMS_PER_SOURCE = 30   # how far down each listing page to look
