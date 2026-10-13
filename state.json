@@ -1,7 +1,7 @@
 {
   "fingerprints": {
-    "all": "4ad3b278966d116a752b1c78517d433f35a96c80ef262f2bb594c0953be819d6",
-    "press": "78da6ff88cd504a2f359e4443a03ba316355e501058af2346d950b319de99b59",
+    "all": "3c277e8ae72f6470c8c9fa8667c51de91be6807e256e35b3fbb43f4cdeb04a56",
+    "press": "b8c9eafba398378349c74fb64db36b777117350d221b191dcfff136d5f512c39",
     "stories": "2d1c7c4b050edbd3f157fa2069bb67202d389f245529317143f3dc3595a255f2"
   },
   "items": {
@@ -220,6 +220,15 @@
       "source": "press",
       "summary": "SAN FRANCISCO, CA (January 15, 2026)–SFMOMA is thrilled to invite visitors and locals to enjoy a photo opportunity with the official Super Bowl LX Roman Numerals, on view for free in the museum’s Evelyn and Walter Haas, Jr. Atrium from January 29 through February 8, 2026. To celebrate the Big…",
       "title": "SFMOMA Offers Programs, Events and Free Public Viewing of Official Super Bowl LX Roman Numerals as Part of Broader Partnership with the Bay Area Host Committee"
+    },
+    "https://www.sfmoma.org/press-release/sfmoma-opens-major-retrospective-of-yoshitomo-nara-in-fall-2027/": {
+      "details_fetched": true,
+      "first_seen": "2026-10-13T23:45:23.837069+00:00",
+      "image": "https://d1hhug17qm51in.cloudfront.net/www-media/2026/10/13132109/1.-Yoshitomo-Nara-Matryoshka-2026-photo-Keita-Saiki-scaled.jpg",
+      "published": "2026-10-13T12:00:00-07:00",
+      "source": "press",
+      "summary": "SAN FRANCISCO, CA (October 13, 2026) – The San Francisco Museum of Modern Art (SFMOMA) today announced a major retrospective of Japanese artist Yoshitomo Nara, opening in Fall 2027. Occupying the museum’s Floor 7 galleries, the exhibition brings together approximately 100 works including…",
+      "title": "SFMOMA Opens Major Retrospective of Yoshitomo Nara in Fall 2027"
     },
     "https://www.sfmoma.org/press-release/sfmoma-presents-major-retrospectives-for-suzanne-jackson-kaws-and-alejandro-cartagena-this-fall/": {
       "details_fetched": true,
